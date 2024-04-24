@@ -6,6 +6,7 @@
   - [ ] 动态添加icon到字体包，由其他仓库的push事件触发
     - [ ] one-config中waybar, yasb，terminal字体等配置
 - [ ] 粗体、斜体、连体等支持
+- [ ] 支持scoop brew choco yum apt等安装方式
 
 ## Show
 
