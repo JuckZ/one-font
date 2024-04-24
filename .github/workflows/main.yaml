@@ -1,0 +1,51 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Build
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checkout health icons. Doesn't have tags so just use latest
+      - name: Checkout Health Icons
+        uses: actions/checkout@v3.0.0
+        with:
+          repository: resolvetosavelives/healthicons
+          ref: main
+          path: healthicons
+      # Setup node for NPM
+      - uses: actions/setup-node@v3.0.0
+        name: Setup Node.js
+      - name: Install Fantasticon
+        run: npm install fantasticon
+      - name: Create release directory
+        run: mkdir release
+      - name: Build
+        run: npx fantasticon -o "./release" -p "health-icon" -n "health-icons" healthicons/public/icons/svg
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            release/health-icons.woff2
+            release/health-icons.woff
+            release/health-icons.eot
+            release/health-icons.css
+          name: healthicons
+          tag_name: main
+      

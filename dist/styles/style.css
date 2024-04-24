@@ -1,0 +1,137 @@
+@font-face {
+    font-family: "OneFont";
+    src: url("../fonts/OneFont.ttf?936558819ba552a51488931c52b824eb") format("truetype"),
+url("../fonts/OneFont.woff?936558819ba552a51488931c52b824eb") format("woff"),
+url("../fonts/OneFont.woff2?936558819ba552a51488931c52b824eb") format("woff2");
+    /**
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+    **/
+}
+
+i[class^="icon-"]:before, i[class*=" icon-"]:before {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: OneFont !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-chevron-left:before {
+    content: "\e000";
+}
+.icon-chevron-right:before {
+    content: "\e001";
+}
+.icon-thumbs-up:before {
+    content: "\e00e";
+}
+.icon-thumbs-down:before {
+    content: "\e00f";
+}
+.icon-awesome_folder-open-solid:before {
+    content: "\f07c";
+}
+.icon-awesome_chart-pie-solid:before {
+    content: "\f200";
+}
+.icon-awesome_memory-solid:before {
+    content: "\f538";
+}
+.icon-awesome_keyboard-solid:before {
+    content: "\f231";
+}
+.icon-awesome_bolt-solid:before {
+    content: "\f0e7";
+}
+.icon-awesome_battery-empty-solid:before {
+    content: "\f244";
+}
+.icon-awesome_battery-quarter-solid:before {
+    content: "\f243";
+}
+.icon-awesome_battery-half-solid:before {
+    content: "\f242";
+}
+.icon-awesome_battery-three-quarters-solid:before {
+    content: "\f241";
+}
+.icon-awesome_battery-full-solid:before {
+    content: "\f240";
+}
+.icon-phosphor_wifi-x-bold:before {
+    content: "\eba0";
+}
+.icon-phosphor_wifi-none-bold:before {
+    content: "\eba1";
+}
+.icon-phosphor_wifi-low-bold:before {
+    content: "\eba2";
+}
+.icon-phosphor_wifi-medium-bold:before {
+    content: "\eba3";
+}
+.icon-phosphor_wifi-high-bold:before {
+    content: "\eba4";
+}
+.icon-awesome_circle-half-stroke-solid:before {
+    content: "\f101";
+}
+.icon-awesome_fa-solid--wifi:before {
+    content: "\f102";
+}
+.icon-awesome_folder-open-regular:before {
+    content: "\f103";
+}
+.icon-awesome_keyboard-regular:before {
+    content: "\f104";
+}
+.icon-awesome_server-solid:before {
+    content: "\f105";
+}
+.icon-awesome_volume-high-solid:before {
+    content: "\f106";
+}
+.icon-awesome_volume-low-solid:before {
+    content: "\f107";
+}
+.icon-awesome_volume-off-solid:before {
+    content: "\f108";
+}
+.icon-awesome_volume-xmark-solid:before {
+    content: "\f109";
+}
+.icon-bar_OneBar.FULL BLOCK:before {
+    content: "\f10a";
+}
+.icon-bar_OneBar.LOWER FIVE EIGHTHS BLOCK:before {
+    content: "\f10b";
+}
+.icon-bar_OneBar.LOWER HALF BLOCK:before {
+    content: "\f10c";
+}
+.icon-bar_OneBar.LOWER ONE EIGHTH BLOCK:before {
+    content: "\f10d";
+}
+.icon-bar_OneBar.LOWER ONE QUARTER BLOCK:before {
+    content: "\f10e";
+}
+.icon-bar_OneBar.LOWER SEVEN EIGHTHS BLOCK:before {
+    content: "\f10f";
+}
+.icon-bar_OneBar.LOWER THREE EIGHTHS BLOCK:before {
+    content: "\f110";
+}
+.icon-bar_OneBar.LOWER THREE QUARTERS BLOCK:before {
+    content: "\f111";
+}
+.icon-bar_OneBar.UPPER HALF BLOCK:before {
+    content: "\f112";
+}
